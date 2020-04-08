@@ -1,0 +1,9 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Sublime Text Editor
+*.sublime-workspace
+#keys
+git
+git.pub
