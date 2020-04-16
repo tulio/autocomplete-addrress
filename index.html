@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="">
 	<title>Autocomplete Address</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
+	<div class="container">
+		<header>
+			<h4>Brazilian Address Form</h4>
+		</header>
+		<div class="row">
+	    <form class="col s12">
+	      <div class="row">
+	        <div class="input-field col s12 m3">
+	          <input id="cep" type="text" class="validate">
+	          <label for="cep">CEP</label>
+	        </div>
+	        <div class="input-field col s12 m7">
+	          <input id="address" type="text" class="validate">
+	          <label for="address">Logradouro</label>
+	        </div>
+	        <div class="input-field col s12 m2">
+	          <input id="home-number" type="text" class="validate">
+	          <label for="home-number">Número</label>
+	        </div>
+	      </div> <!-- .row -->
+
+	      <div class="row">
+	        <div class="input-field col s12 m4">
+	          <input id="neighborhood" type="text" class="validate">
+	          <label for="neighborhood">Bairro</label>
+	        </div>
+	        <div class="input-field col s12 m4">
+	          <input id="city" type="text" class="validate">
+	          <label for="city">Cidade</label>
+	        </div>
+	        <div class="input-field col s12 m4">
+	          <input id="state" type="text" class="validate">
+	          <label for="state">Estado</label>
+	        </div>
+	      </div> <!-- .row -->
+
+	    </form>
+  	</div>
+	</div> <!-- .container -->
 	
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
