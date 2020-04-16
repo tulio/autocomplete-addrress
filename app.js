@@ -10,10 +10,11 @@ $cep.addEventListener('input', function(e){
 		promise
 			.then( data => {
 				console.log('success');
+				if(data.erro) throw new Error('This CEP does not exist');
 				showAddress(data);
 			})
 			.catch( err => {
-				console.log('s');
+				console.log('ERROR');
 				console.log(err.message);
 			});
 	}
